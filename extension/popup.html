@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PriceCompare</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><strong>PriceCompare</strong><span>Find a better price</span></header>
+  <main>
+    <form id="search-form">
+      <label for="query">Product name</label>
+      <div class="search-row"><input id="query" type="search" placeholder="Search electronics" required><button type="submit">Compare</button></div>
+    </form>
+    <p id="status" role="status"></p>
+    <section id="results" aria-live="polite"></section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
